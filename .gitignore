@@ -1,0 +1,16 @@
+/uc.log*
+/build/
+/bin/
+/.gradle/
+/.settings/
+/.vertx/
+/file-uploads/
+/.classpath
+/.project
+/UserCenter.iml
+/.idea/
+gradle.properties
+/apitoken
+/*.ipr
+/*.iws
+/vertx.iml
