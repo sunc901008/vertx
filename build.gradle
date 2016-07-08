@@ -1,0 +1,65 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'eclipse'
+    id 'idea'
+}
+
+def defaultEncoding = 'UTF-8'
+[compileJava, compileTestJava]*.options*.encoding = defaultEncoding
+
+mainClassName = 'io.vertx.core.Launcher'
+if ( project.hasProperty("mainClass") ) {
+    mainClassName = mainClass
+}
+
+distTar {
+    archiveName project.name + '.tar'
+}
+
+def distributionTar = distTar.archiveName
+println("distributionTar is $distributionTar")
+
+def vertxVersion = '3.2.1'
+
+applicationDistribution.from("src/main/resources/") {
+    into ""
+}
+
+applicationDistribution.from("etc/") {
+    into "etc"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile "io.vertx:vertx-core:$vertxVersion"
+    compile "io.vertx:vertx-auth-jwt:$vertxVersion"
+    compile "io.vertx:vertx-codegen:$vertxVersion"
+    compile "io.vertx:vertx-hazelcast:$vertxVersion"
+    compile "io.vertx:vertx-redis-client:$vertxVersion"
+    compile "io.vertx:vertx-web:$vertxVersion"
+    compile "io.vertx:vertx-mail-client:$vertxVersion"
+    compile "io.vertx:vertx-jdbc-client:$vertxVersion"
+    compile "io.vertx:vertx-unit:$vertxVersion"
+    compile "io.vertx:vertx-web-templ-handlebars:$vertxVersion"
+    compile "mysql:mysql-connector-java:5.1.38"
+    compile "com.alibaba:druid:1.0.7"
+    compile files("libs/handlebars.4.1.jar")
+    compile 'junit:junit:4.11'
+    compile("com.github.kevinsawicki:http-request:6.0")
+    compile group: 'javax.mail', name: 'javax.mail-api', version: '1.5.5'
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
+}

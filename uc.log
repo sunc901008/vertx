@@ -1,0 +1,840 @@
+[com.mchange.v2.log.MLog] [Mon Jun 20 14:46:16 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 14:46:16 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 14:46:17 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu4def61uujl6r|6a2bcfcb, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu4def61uujl6r|6a2bcfcb, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/uc?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[io.vertx.core.impl.ContextImpl] [Mon Jun 20 14:46:27 CST 2016] 严重 [Unhandled exception] 
+java.lang.NullPointerException
+	at openscanner.cc.Test.JdbcTest.lambda$main$0(JdbcTest.java:13)
+	at openscanner.cc.verticles.Jdbc.lambda$null$0(Jdbc.java:47)
+	at io.vertx.ext.jdbc.impl.actions.AbstractJDBCAction.lambda$null$8(AbstractJDBCAction.java:65)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:335)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:357)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[com.mchange.v2.log.MLog] [Mon Jun 20 14:47:55 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 14:47:55 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 14:47:55 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu4figg1o4nfjw|3551a94, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu4figg1o4nfjw|3551a94, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.log.MLog] [Mon Jun 20 15:09:38 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 15:09:39 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:09:39 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu57g9c507zwb|3108bc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu57g9c507zwb|3108bc, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:09:39 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu57g9c507zwb|12843fce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu57g9c507zwb|12843fce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.log.MLog] [Mon Jun 20 15:11:07 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 15:11:07 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:11:07 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu59ccj1r0ay07|12843fce, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu59ccj1r0ay07|12843fce, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:11:07 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu59ccj1r0ay07|6b09bb57, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu59ccj1r0ay07|6b09bb57, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.log.MLog] [Mon Jun 20 15:22:57 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 15:22:57 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:22:58 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu5okq5ojhvpv|3b084709, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu5okq5ojhvpv|3b084709, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:22:58 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu5okq5ojhvpv|62ee68d8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu5okq5ojhvpv|62ee68d8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.log.MLog] [Mon Jun 20 15:23:23 CST 2016] 信息 [MLog clients using java 1.4+ standard logging.] 
+[com.mchange.v2.c3p0.C3P0Registry] [Mon Jun 20 15:23:24 CST 2016] 信息 [Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:23:24 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu5p4u18n29dr|7921b0a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu5p4u18n29dr|7921b0a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource] [Mon Jun 20 15:23:24 CST 2016] 信息 [Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfsx9hu5p4u18n29dr|65e2dbf3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfsx9hu5p4u18n29dr|65e2dbf3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] 
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 22 14:02:45 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.NullPointerException
+	at openscanner.cc.Verticles.CSRFTest.lambda$main$1(CSRFTest.java:25)
+	at io.vertx.ext.web.impl.RouteImpl.handleFailure(RouteImpl.java:227)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:76)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RoutingContextImpl.doFail(RoutingContextImpl.java:355)
+	at io.vertx.ext.web.impl.RoutingContextImpl.fail(RoutingContextImpl.java:119)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:148)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:37)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:472)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.lambda$channelRead$20(VertxHttpHandler.java:80)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:80)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:354)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:244)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 22 14:11:49 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.NullPointerException
+	at openscanner.cc.Verticles.CSRFTest.lambda$main$2(CSRFTest.java:32)
+	at io.vertx.ext.web.impl.RouteImpl.handleFailure(RouteImpl.java:227)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:76)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RoutingContextImpl.doFail(RoutingContextImpl.java:355)
+	at io.vertx.ext.web.impl.RoutingContextImpl.fail(RoutingContextImpl.java:119)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:148)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:37)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:472)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.lambda$channelRead$20(VertxHttpHandler.java:80)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:80)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:354)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:244)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 22 14:13:17 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.NullPointerException
+	at openscanner.cc.Verticles.CSRFTest.lambda$main$2(CSRFTest.java:32)
+	at io.vertx.ext.web.impl.RouteImpl.handleFailure(RouteImpl.java:227)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:76)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RoutingContextImpl.doFail(RoutingContextImpl.java:355)
+	at io.vertx.ext.web.impl.RoutingContextImpl.fail(RoutingContextImpl.java:119)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:148)
+	at io.vertx.ext.web.handler.impl.CSRFHandlerImpl.handle(CSRFHandlerImpl.java:37)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:472)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.lambda$channelRead$20(VertxHttpHandler.java:80)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:80)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:354)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:244)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:24 CST 2016] 严重 [java.lang.IllegalArgumentException: text is empty] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: invalid version format: ￀￀] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: text is empty] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: text is empty] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: text is empty] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: invalid version format: ￀ 3￀] 
+[io.vertx.core.net.impl.ConnectionBase] [Wed Jun 29 10:35:25 CST 2016] 严重 [java.lang.IllegalArgumentException: invalid version format: ￀ 3￀] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 10:35:30 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 10:35:30 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 10:35:30 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 10:35:30 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 10:35:30 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:01:37 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 29 11:01:37 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.RuntimeException: Algorithm not supported
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:180)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:67)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:49 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 29 11:02:49 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.RuntimeException: Algorithm not supported
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:180)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:67)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:02:51 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 29 11:02:51 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.RuntimeException: Algorithm not supported
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:180)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:67)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:472)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.lambda$channelRead$20(VertxHttpHandler.java:80)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:80)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:06:21 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.web.impl.RoutingContextImplBase] [Wed Jun 29 11:06:21 CST 2016] 严重 [Unexpected exception in route] 
+java.lang.RuntimeException: Algorithm not supported
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:180)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:07:06 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:22:08 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:25:02 CST 2016] 信息 [ES512 not available] 
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:25:14 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 12457 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:177)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/101357693.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/160910787.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:25:28 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 26047 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.util.Collections$UnmodifiableMap$UnmodifiableEntrySet.toArray(Collections.java:1673)
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:177)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/101357693.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/160910787.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:25:47 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 44861 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.util.Collections$UnmodifiableMap.get(Collections.java:1454)
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:177)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/101357693.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/160910787.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:25:55 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 52892 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:180)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/101357693.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/160910787.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:26:19 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 77008 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.nio.Buffer.limit(Buffer.java:274)
+	at java.nio.Buffer.<init>(Buffer.java:201)
+	at java.nio.CharBuffer.<init>(CharBuffer.java:281)
+	at java.nio.HeapCharBuffer.<init>(HeapCharBuffer.java:70)
+	at java.nio.CharBuffer.wrap(CharBuffer.java:373)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:265)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
+	at java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
+	at java.io.PrintStream.newLine(PrintStream.java:545)
+	at java.io.PrintStream.println(PrintStream.java:824)
+	at java.lang.Throwable$WrappedPrintStream.println(Throwable.java:748)
+	at java.lang.Throwable.printStackTrace(Throwable.java:658)
+	at java.lang.Throwable.printStackTrace(Throwable.java:643)
+	at java.lang.Throwable.printStackTrace(Throwable.java:634)
+	at openscanner.cc.Test.Http.lambda$main$1(Http.java:61)
+	at openscanner.cc.Test.Http$$Lambda$5/1282287470.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleFailure(RouteImpl.java:227)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:76)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RoutingContextImpl.doFail(RoutingContextImpl.java:355)
+	at io.vertx.ext.web.impl.RoutingContextImpl.fail(RoutingContextImpl.java:125)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:84)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/101357693.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/160910787.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:26:55 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:26:55 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:26:55 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:26:55 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:26:55 CST 2016] 信息 [ES512 not available] 
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:27:02 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 7563 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.util.Collections$UnmodifiableMap.entrySet(Collections.java:1481)
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:175)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/1669098562.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/1720798198.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:27:24 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 29661 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.lang.System.currentTimeMillis(Native Method)
+	at io.vertx.ext.auth.jwt.impl.JWT.sign(JWT.java:190)
+	at io.vertx.ext.auth.jwt.impl.JWTAuthProviderImpl.generateToken(JWTAuthProviderImpl.java:145)
+	at openscanner.cc.Test.Http.lambda$main$0(Http.java:56)
+	at openscanner.cc.Test.Http$$Lambda$4/1486566962.handle(Unknown Source)
+	at io.vertx.ext.web.impl.RouteImpl.handleContext(RouteImpl.java:221)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:78)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/1669098562.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/1720798198.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:29:28 CST 2016] 信息 [ES512 not available] 
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:29:44 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 12578 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.lang.System.currentTimeMillis(Native Method)
+	at java.util.logging.LogRecord.<init>(LogRecord.java:185)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:155)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:171)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:147)
+	at io.vertx.core.logging.JULLogDelegate.trace(JULLogDelegate.java:129)
+	at io.vertx.core.logging.Logger.trace(Logger.java:130)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:83)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/333478503.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/2146208970.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.core.impl.BlockedThreadChecker] [Wed Jun 29 11:29:44 CST 2016] 警告 [Thread Thread[vert.x-eventloop-thread-0,5,main] has been blocked for 16707 ms, time limit is 2000] 
+io.vertx.core.VertxException: Thread blocked
+	at java.util.logging.FileHandler.publish(FileHandler.java:679)
+	at java.util.logging.Logger.log(Logger.java:738)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:167)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:171)
+	at io.vertx.core.logging.JULLogDelegate.log(JULLogDelegate.java:147)
+	at io.vertx.core.logging.JULLogDelegate.trace(JULLogDelegate.java:129)
+	at io.vertx.core.logging.Logger.trace(Logger.java:130)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:71)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RoutingContextImpl.doFail(RoutingContextImpl.java:355)
+	at io.vertx.ext.web.impl.RoutingContextImpl.fail(RoutingContextImpl.java:125)
+	at io.vertx.ext.web.impl.RoutingContextImplBase.iterateNext(RoutingContextImplBase.java:84)
+	at io.vertx.ext.web.impl.RoutingContextImpl.next(RoutingContextImpl.java:94)
+	at io.vertx.ext.web.impl.RouterImpl.accept(RouterImpl.java:79)
+	at openscanner.cc.Test.Http$$Lambda$6/874217650.handle(Unknown Source)
+	at io.vertx.core.http.impl.ServerConnection.handleRequest(ServerConnection.java:274)
+	at io.vertx.core.http.impl.ServerConnection.processMessage(ServerConnection.java:392)
+	at io.vertx.core.http.impl.ServerConnection.handleMessage(ServerConnection.java:134)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.lambda$createConnAndHandle$27(HttpServerImpl.java:538)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler$$Lambda$14/333478503.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.lambda$wrapTask$18(ContextImpl.java:333)
+	at io.vertx.core.impl.ContextImpl$$Lambda$12/2146208970.run(Unknown Source)
+	at io.vertx.core.impl.ContextImpl.executeFromIO(ContextImpl.java:225)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.createConnAndHandle(HttpServerImpl.java:536)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:470)
+	at io.vertx.core.http.impl.HttpServerImpl$ServerHandler.doMessageReceived(HttpServerImpl.java:421)
+	at io.vertx.core.http.impl.VertxHttpHandler.channelRead(VertxHttpHandler.java:85)
+	at io.vertx.core.net.impl.VertxHandler.channelRead(VertxHandler.java:124)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:276)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:263)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:318)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:304)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:48:03 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:51:30 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:51:30 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:51:30 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:51:30 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:51:30 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:55:41 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:55:41 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:55:41 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:55:41 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 11:55:41 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:08:48 CST 2016] 信息 [ES512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [HS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [HS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [HS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [RS256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [RS384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [RS512 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [ES256 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [ES384 not available] 
+[io.vertx.ext.auth.jwt.impl.JWT] [Wed Jun 29 12:13:57 CST 2016] 信息 [ES512 not available] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:17:02 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[io.vertx.core.net.impl.NetSocketImpl] [Thu Jun 30 15:17:23 CST 2016] 严重 [javax.net.ssl.SSLException: Received fatal alert: handshake_failure] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:17:23 CST 2016] 严重 [Send email Failed! sendTo : sunc@openscannern . Reason : javax.net.ssl.SSLException: Received fatal alert: handshake_failure] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:21:37 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:21:37 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:21:37 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:27:57 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[io.vertx.ext.mail.impl.SMTPSendMail] [Thu Jun 30 15:28:08 CST 2016] 警告 [recipient address not accepted, continuing: 501 Bad address syntax] 
+[io.vertx.ext.mail.impl.SMTPSendMail] [Thu Jun 30 15:28:08 CST 2016] 警告 [no recipient addresses were accepted, not sending mail] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:28:08 CST 2016] 严重 [Send email Failed! sendTo : sunc@openscanner . Reason : no recipient addresses were accepted, not sending mail] 
+[io.vertx.ext.mail.impl.SMTPConnection] [Thu Jun 30 15:52:12 CST 2016] 严重 [exception on connect] 
+java.net.ConnectException: 拒绝连接: /103.7.28.217:587
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:52:12 CST 2016] 严重 [Send email Failed! sendTo : sunc@openscanner.cn . Reason : 拒绝连接: /103.7.28.217:587] 
+[io.vertx.ext.mail.impl.SMTPConnection] [Thu Jun 30 15:52:29 CST 2016] 严重 [exception on connect] 
+java.net.ConnectException: 拒绝连接: /103.7.28.217:587
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:224)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:289)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:52:29 CST 2016] 严重 [Send email Failed! sendTo : sunc@openscanner.cn . Reason : 拒绝连接: /103.7.28.217:587] 
+[openscanner.cc.Verticles.Mail] [Thu Jun 30 15:56:23 CST 2016] 信息 [Send email success! sendTo : sunc@openscanner.cn] 
+[io.vertx.core.http.impl.HttpServerResponseImpl] [Fri Jul 08 16:18:31 CST 2016] 严重 [File not found: tempplates/login.html] 
+[io.vertx.core.http.impl.HttpServerResponseImpl] [Fri Jul 08 16:19:41 CST 2016] 严重 [File not found: tempplates/login.html] 
+[io.vertx.core.http.impl.HttpServerResponseImpl] [Fri Jul 08 16:20:05 CST 2016] 严重 [File not found: tempplates/login.html] 

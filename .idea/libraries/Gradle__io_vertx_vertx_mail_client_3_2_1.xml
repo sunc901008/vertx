@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.vertx:vertx-mail-client:3.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-mail-client/3.2.1/a88391f08e2a4cfed16791dcd41368ff0944c899/vertx-mail-client-3.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-mail-client/3.2.1/d43d224a91bd2ae9f266e388c6d2e310b28e1d1a/vertx-mail-client-3.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
