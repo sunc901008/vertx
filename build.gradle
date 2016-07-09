@@ -9,7 +9,7 @@ def defaultEncoding = 'UTF-8'
 [compileJava, compileTestJava]*.options*.encoding = defaultEncoding
 
 mainClassName = 'io.vertx.core.Launcher'
-if ( project.hasProperty("mainClass") ) {
+if (project.hasProperty("mainClass")) {
     mainClassName = mainClass
 }
 
@@ -57,8 +57,10 @@ dependencies {
     compile 'junit:junit:4.11'
     compile("com.github.kevinsawicki:http-request:6.0")
     compile group: 'javax.mail', name: 'javax.mail-api', version: '1.5.5'
-}
 
+    compile group: 'com.stripe', name: 'stripe-java', version: '2.6.0'
+
+}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.13'

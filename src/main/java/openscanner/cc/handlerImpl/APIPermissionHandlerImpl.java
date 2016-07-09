@@ -13,7 +13,6 @@ public class APIPermissionHandlerImpl implements APIPermissionHandler {
 
     @Override
     public void handle(RoutingContext ctx) {
-        // TODO Auto-generated method stub
         Object remote_address = ctx.get("remote_address");
         if(remote_address == null){
             ctx.response().end("no login");

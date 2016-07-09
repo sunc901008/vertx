@@ -1,9 +1,15 @@
 package openscanner.cc.stripe;
 
-import io.vertx.core.MultiMap;
+import com.stripe.Stripe;
+import com.stripe.exception.*;
+import com.stripe.model.Charge;
+import com.stripe.model.Customer;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.handler.BodyHandler;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created : sunc
@@ -23,20 +29,35 @@ public class Html {
 
         router.route("/pay").handler(ctx -> {
             ctx.response().setChunked(true);
-            MultiMap params = ctx.request().params();
-            for(String key : params.names()){
-                ctx.response().write(key + ":" + params.get(key) + "\n");
+
+            // Set your secret key: remember to change this to your live secret key in production
+// See your keys here https://dashboard.stripe.com/account/apikeys
+            Stripe.apiKey = "sk_test_BQokikJOvBiI2HlWgH4olfQ2";
+
+// Get the credit card details submitted by the form
+            String token = ctx.request().getParam("stripeToken");
+
+            try {
+                Map<String, Object> customerParams = new HashMap<>();
+                customerParams.put("source", token);
+                customerParams.put("description", "Example charge");
+
+                Customer customer = Customer.create(customerParams);
+
+                Map<String, Object> chargeParams = new HashMap<>();
+                chargeParams.put("amount", 1000); // amount in cents, again
+                chargeParams.put("currency", "usd");
+                chargeParams.put("customer", customer.getId());
+
+                Charge charge = Charge.create(chargeParams);
+
+                ctx.response().end(customer.getId());
+            } catch (CardException | APIException | InvalidRequestException | AuthenticationException | APIConnectionException e) {
+                e.printStackTrace();
             }
-            ctx.response().write("\n");
-            ctx.response().write("\n");
-            ctx.response().write("***************");
-            ctx.response().write("\n");
-            ctx.response().write("\n");
-            MultiMap headers = ctx.request().headers();
-            for(String key : headers.names()){
-                ctx.response().write(key + ":" + headers.get(key) + "\n");
-            }
-            ctx.response().end();
+
+
+
         });
 
         vertx.createHttpServer().requestHandler(router::accept).listen(8000, res -> {

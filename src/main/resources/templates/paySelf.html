@@ -1,9 +1,9 @@
 <html>
 <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-
-<script type="text/javascript">
+    <script type="text/javascript">
   Stripe.setPublishableKey("pk_test_6pRNASCoBOKtIshFeQd4XMUh");
 
   $(function() {
@@ -35,6 +35,8 @@ function stripeResponseHandler(status, response) {
     // Get the token ID:
     var token = response.id;
 
+    console.log(response);
+
     // Insert the token ID into the form so it gets submitted to the server:
     $form.append($('<input type="hidden" name="stripeToken">').val(token));
 
@@ -42,7 +44,8 @@ function stripeResponseHandler(status, response) {
     $form.get(0).submit();
   }
 };
-</script>
+
+    </script>
 </head>
 
 <body>
@@ -76,7 +79,6 @@ function stripeResponseHandler(status, response) {
 
     <input type="submit" class="submit" value="Submit Payment">
 </form>
-
 
 
 </body>
