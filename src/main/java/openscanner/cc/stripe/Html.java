@@ -4,6 +4,7 @@ import com.stripe.Stripe;
 import com.stripe.exception.*;
 import com.stripe.model.Charge;
 import com.stripe.model.Customer;
+import io.vertx.core.MultiMap;
 import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.handler.BodyHandler;
@@ -25,14 +26,31 @@ public class Html {
 
         router.route("/").handler(ctx -> ctx.response().sendFile("templates/pay.html"));
 
+
+
+        router.route("/webhook").handler(ctx -> {
+            MultiMap mapP = ctx.request().params();
+            for(String key : mapP.names())
+                System.out.println(key + ":" + mapP.get(key));
+
+            MultiMap maps = ctx.request().headers();
+            for(String key : maps.names())
+                System.out.println(key + ":" + maps.get(key));
+
+            ctx.response().end("hehe");
+        });
+
+
+
         router.route("/self").handler(ctx -> ctx.response().sendFile("templates/paySelf.html"));
 
         router.route("/pay").handler(ctx -> {
             ctx.response().setChunked(true);
+            ctx.response().putHeader("Content-type","text/html");
 
             // Set your secret key: remember to change this to your live secret key in production
 // See your keys here https://dashboard.stripe.com/account/apikeys
-            Stripe.apiKey = "sk_test_BQokikJOvBiI2HlWgH4olfQ2";
+            Stripe.apiKey = "sk_test_kAFmLlc0L9fymGNvVDi3L1Et";
 
 // Get the credit card details submitted by the form
             String token = ctx.request().getParam("stripeToken");
@@ -51,7 +69,10 @@ public class Html {
 
                 Charge charge = Charge.create(chargeParams);
 
-                ctx.response().end(customer.getId());
+                ctx.response().write(customer.getId());
+
+                ctx.response().end("<br/><a href='/'>back</a>");
+
             } catch (CardException | APIException | InvalidRequestException | AuthenticationException | APIConnectionException e) {
                 e.printStackTrace();
             }
