@@ -63,7 +63,7 @@ public class Html {
                 Customer customer = Customer.create(customerParams);
 
                 Map<String, Object> chargeParams = new HashMap<>();
-                chargeParams.put("amount", 1000); // amount in cents, again
+                chargeParams.put("amount", 2000); // amount in cents, again
                 chargeParams.put("currency", "usd");
                 chargeParams.put("customer", customer.getId());
 
