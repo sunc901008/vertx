@@ -1,0 +1,30 @@
+<html>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.js"></script>
+<body>
+
+<form action="/order" method="POST" id="payment-form">
+
+    <select id="goods">
+
+        <option value="GOODS-A">GOODS-A($10.00)</option>
+        <option value="GOODS-B">GOODS-B($20.00)</option>
+        <option value="GOODS-C">GOODS-C($30.00)</option>
+
+    </select>
+
+    <input type="button" value="submit" id="pay">
+</form>
+</body>
+<script>
+$(document).ready(function(){
+    $("#pay").bind("click",function(){
+        var $form = $('#payment-form');
+        var goods = $("#goods").val();
+        $form.append($('<input type="hidden" name="goods">').val(goods));
+        $form.get(0).submit();
+    });
+});
+
+</script>
+</html>

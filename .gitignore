@@ -14,3 +14,4 @@ gradle.properties
 /*.ipr
 /*.iws
 /vertx.iml
+/uc.log

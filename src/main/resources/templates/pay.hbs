@@ -2,23 +2,24 @@
 
 <body>
 
-
 <form action="/pay" method="POST">
+    <p>amount:{{amount}}</p>
+    <p>name:{{name}}</p>
+    <p>description:{{description}}</p>
+
     <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key=pk_test_ezs6iIMCEF3EB8IDeOca4rwE
-            data-amount="2000"
-            data-name="Demo Site"
-            data-description="2 widgets ($20.00)"
-            data-image="/128x128.png"
+            data-amount="{{amount}}"
+            data-name="{{name}}"
+            data-description="{{description}}"
+            data-image="static/12345.png"
             data-label="Pay with Card or Alipay"
             data-locale="auto"
             data-currency="usd"
             data-alipay="true">
     </script>
 </form>
-
-
 
 </body>
 </html>
