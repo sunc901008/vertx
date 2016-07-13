@@ -39,14 +39,22 @@ public class PayStripe extends AbstractVerticle {
                 ctx.response().end("error");
                 return;
             }
-            OrderMap order = new OrderMap();
+            GoodsMap order = new GoodsMap();
             int amount = order.getAmount(goods);
+            if (amount == 0) {
+                ctx.response().end("error");
+            }
             String name = goods;
             String description = "PAY FOR " + goods;
 
             ctx.put("amount", amount);
             ctx.put("name", name);
             ctx.put("description", description);
+
+            OrdersTypeMap otm = new OrdersTypeMap();
+            long order_id = BillNumberBuilder.getDaySub(otm.getType("TYPE-A"));
+
+            ctx.put("order_id", order_id);
 
             HandlebarsTemplateEngine.create().render(ctx, "templates/pay", res -> {
                 if (res.succeeded())
@@ -75,7 +83,7 @@ public class PayStripe extends AbstractVerticle {
             try {
                 Map<String, Object> customerParams = new HashMap<>();
                 customerParams.put("source", token);
-                customerParams.put("description", "");
+                customerParams.put("description", "test");
 
                 Customer customer = Customer.create(customerParams);
 
@@ -93,6 +101,10 @@ public class PayStripe extends AbstractVerticle {
                 chargeParams.put("amount", 500); // amount in cents, again
                 chargeParams.put("currency", "usd");
 
+                Map<String, String> initialMetadata = new HashMap<>();
+                initialMetadata.put("order_id", "6735");
+                chargeParams.put("metadata", initialMetadata);
+
                 Charge charge = Charge.create(chargeParams);
                 ctx.response().write("token:<br />" + token + "<br />");
                 ctx.response().write("charge:<br />");
@@ -103,6 +115,7 @@ public class PayStripe extends AbstractVerticle {
                 ctx.response().write("getSource:" + charge.getSource() + "<br/>");
                 ctx.response().write("getShipping:" + charge.getShipping() + "<br/>");
                 ctx.response().write("getPaid:" + charge.getPaid() + "<br/>");
+                ctx.response().write("getMetadata:" + charge.getMetadata() + "<br/>");
 
                 ctx.response().write("<br/>");
                 ctx.response().end("<a href='/'>back</a>");
