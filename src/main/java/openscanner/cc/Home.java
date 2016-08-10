@@ -1,9 +1,12 @@
 package openscanner.cc;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Handler;
 import io.vertx.core.MultiMap;
+import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpServer;
 import io.vertx.ext.web.Router;
+import io.vertx.ext.web.RoutingContext;
 import openscanner.cc.utils.Property;
 
 import java.util.Properties;
@@ -21,34 +24,47 @@ public class Home extends AbstractVerticle {
         HttpServer server = vertx.createHttpServer();
 
         Router router = Router.router(vertx);
+        Router routerSub = Router.router(vertx);
+        router.mountSubRouter("/p", routerSub);
 
-        router.route("/").handler(ctx -> {
-            ctx.response().setChunked(true);
-            try {
-//                FileInputStream input = new FileInputStream("conf/https.properties");
-                Properties pro = get();
-//                pro.load(input);
-                for(String key:pro.stringPropertyNames())
-                    ctx.response().write(key + ":" + pro.get(key) + "\n");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            MultiMap map = ctx.request().headers();
-            ctx.response().write("********************\n");
-            for (String key : map.names())
-                ctx.response().write(key + ":" + map.get(key) + "\n");
-            ctx.response().end();
-
+        router.route().handler(ctx -> {
+            System.out.println("aaaa");
+            ctx.next();
         });
+        router.route("/").handler(ctx -> {
+            System.out.println("////");
+            ctx.response().end("//");
+        });
+        routerSub.route("/*").handler(ctx -> {
+            System.out.println("***");
+            ctx.next();
+        });
+
+        Handler<RoutingContext> handler = ctx -> {
+            System.out.println(ctx.request().path());
+            ctx.response().end(ctx.request().path());
+        };
+
+        routerSub.route("/a").handler(handler);
+        routerSub.delete("/d/v/:d").handler(handler);
 
         server.requestHandler(router::accept).listen(8090, "localhost", res -> {
             if (res.succeeded())
                 System.out.println("success");
+            else {
+                res.cause().printStackTrace();
+            }
         });
+
     }
 
-    public static Properties get(){
+    public static Properties get() {
         return new Property().getProperties("conf/https.properties");
+    }
+
+    public static void main(String[] args) {
+        Vertx vertx = Vertx.vertx();
+        vertx.deployVerticle(Home.class.getName());
     }
 
 }

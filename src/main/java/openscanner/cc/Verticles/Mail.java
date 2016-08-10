@@ -21,13 +21,13 @@ public class Mail {
 
     public static void handler(String sendTo, Handler<Boolean> handler) {
         Vertx vertx = Vertx.vertx();
-        String username = "service@openscanner.cn";
+        String username = "service@appinner.cn";
         MailConfig config = new MailConfig();
         config.setHostname("smtp.exmail.qq.com");
         config.setPort(587);
         config.setStarttls(StartTLSOptions.REQUIRED);
         config.setUsername(username);
-        config.setPassword("123Liu.");
+        config.setPassword("Sunc1123.");
         config.setAllowRcptErrors(true);
         MailClient mailClient = MailClient.createNonShared(vertx, config);
 

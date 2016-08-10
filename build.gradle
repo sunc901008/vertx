@@ -59,6 +59,11 @@ dependencies {
     compile group: 'javax.mail', name: 'javax.mail-api', version: '1.5.5'
 
     compile group: 'com.stripe', name: 'stripe-java', version: '2.6.0'
+// https://mvnrepository.com/artifact/jmagick/jmagick
+    compile group: 'jmagick', name: 'jmagick', version: '6.6.9'
+// https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+    compile group: 'com.sun.mail', name: 'javax.mail', version: '1.5.5'
+
 
 }
 
